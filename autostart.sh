@@ -16,6 +16,7 @@ function run {
 #run xrandr --output DVI-D-1 --right-of DVI-I-1 --auto
 #run xrandr --output HDMI2 --right-of HDMI1 --auto
 
+
 run "nm-applet"
 #run "pamac-tray"
 #run "variety"
@@ -26,7 +27,8 @@ run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 picom -b  --config $HOME/.local/share/dwm/picom.conf &
 run "numlockx on"
 run "volumeicon"
-run slstatus &
+# run slstatus &
+run /usr/local/bin/dwmblocks &
 sxhkd -c $HOME/.local/share/dwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 run "conky -c $HOME/.local/share/dwm/system-overview"
