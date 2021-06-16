@@ -44,19 +44,19 @@ super + v
 
 #Termite
 super + Return
-    st
+    kitty
 
 #Xkill
 super + Escape
     xkill
 
 super + q
-    xkill
+    kill
 
 #Keyboard dependent
 #termite
 super + KP_Enter
-	st
+	kitty
 
 #################################################################
 # SUPER + SHIFT KEYS

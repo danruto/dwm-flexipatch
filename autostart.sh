@@ -31,7 +31,7 @@ sxhkd -c ~/.local/share/dwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 run "conky -c $HOME/.local/share/dwm/system-overview"
 #you can set wallpapers in themes as well
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+feh --bg-fill ~/dotfiles/wallpapers/wallpapersden.com_batman-family-minimalist_3840x2160.jpg &
 
 #run applications from startup
 
