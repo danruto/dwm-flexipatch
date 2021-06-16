@@ -17,21 +17,21 @@ function run {
 #run xrandr --output HDMI2 --right-of HDMI1 --auto
 
 run "nm-applet"
-run "pamac-tray"
-run "variety"
+#run "pamac-tray"
+#run "variety"
 run "xfce4-power-manager"
 run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-picom -b  --config ~/.local/share/dwm/picom.conf &
+picom -b  --config $HOME/.local/share/dwm/picom.conf &
 run "numlockx on"
 run "volumeicon"
 run slstatus &
-sxhkd -c ~/.local/share/dwm/sxhkd/sxhkdrc &
+sxhkd -c $HOME/.local/share/dwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 run "conky -c $HOME/.local/share/dwm/system-overview"
 #you can set wallpapers in themes as well
-feh --bg-fill ~/dotfiles/wallpapers/wallpapersden.com_batman-family-minimalist_3840x2160.jpg &
+feh --bg-fill $HOME/dotfiles/wallpapers/wallpapersden.com_batman-family-minimalist_3840x2160.jpg &
 
 #run applications from startup
 

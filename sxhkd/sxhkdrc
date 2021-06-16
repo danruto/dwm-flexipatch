@@ -8,7 +8,7 @@
 
 #Atom
 super + e
-    neovide
+    code
 
 #Browser
 super + w
@@ -42,21 +42,16 @@ super + v
 #super + m
 #    pragha
 
-#Termite
-super + Return
-    kitty
-
 #Xkill
 super + Escape
     xkill
 
-super + q
-    kill
-
 #Keyboard dependent
-#termite
 super + KP_Enter
-	kitty
+	st
+
+super + Return
+	st
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -156,7 +151,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     xbacklight -dec 10
 
-
 #################################################################
 #################################################################
 ##################   DESKTOP SPECIFIC    ########################
@@ -169,4 +163,4 @@ XF86MonBrightnessDown
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/arco-dwm/scripts/picom-toggle.sh
+    ~/.local/share/dwm/scripts/picom-toggle.sh
